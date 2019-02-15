@@ -5,7 +5,7 @@ exports.create = (req, res) => {
   // Request validation
   if(!req.body) {
     return res.status(400).send({
-      message: "Product content can not be empty"
+      message: "Photo content can not be empty"
     });
   }
 

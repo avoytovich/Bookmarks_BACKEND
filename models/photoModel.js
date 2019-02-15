@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const PhotosSchema = mongoose.Schema({
+const PhotoSchema = mongoose.Schema({
   title: String,
   description: String,
   event: String,
@@ -9,4 +9,4 @@ const PhotosSchema = mongoose.Schema({
   timestamps: true
 });
 
-module.exports = mongoose.model('Photos', PhotosSchema);
+module.exports = mongoose.model('Photo', PhotoSchema);

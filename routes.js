@@ -1,18 +1,24 @@
 module.exports = (app) => {
-  const photo = require('./controllers/photoController');
+  const {
+    photoController,
+    userController
+  } = require('./controllers');
 
   // Create a new Photo
-  app.post('/photo', photo.create);
+  app.post('/photo', photoController.create);
 
   // Retrieve all Photos
-  app.get('/photos', photo.findAll);
+  app.get('/photos', photoController.findAll);
 
   // Retrieve a single Photo with photoId
-  app.get('/photos/:photoId', photo.findOne);
+  app.get('/photos/:photoId', photoController.findOne);
 
   // Update a Note with photoId
-  app.put('/photos/:photoId', photo.update);
+  app.put('/photos/:photoId', photoController.update);
 
   // Delete a Note with photoId
-  app.delete('/photos/:photoId', photo.delete);
+  app.delete('/photos/:photoId', photoController.delete);
+
+  // Create a new User
+  app.post('/user', userController.create);
 }
