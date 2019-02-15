@@ -1,0 +1,25 @@
+{
+  "name": "photosharing_backend",
+  "version": "1.0.0",
+  "description": "This is photos sharing App",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avoytovich/PhotosSharing_BACKEND.git"
+  },
+  "author": "Andrii Voitovych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avoytovich/PhotosSharing_BACKEND/issues"
+  },
+  "homepage": "https://github.com/avoytovich/PhotosSharing_BACKEND#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.12"
+  }
+}
